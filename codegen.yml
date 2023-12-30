@@ -1,0 +1,21 @@
+overwrite: true
+schema:
+  - 'https://${NEXT_PUBLIC_PRISMIC_REPO}.prismic.io/graphql':
+      method: GET
+      headers:
+        Authorization: 'Token ${NEXT_PUBLIC_PRISMIC_MASTER_AND_RELEASES_ACCESS_TOKEN}'
+        Prismic-Ref: '${NEXT_PUBLIC_PRISMIC_REF}'
+generates:
+  # Schema
+  ./schema.graphql:
+    plugins:
+      - schema-ast
+    reactApolloVersion: 3
+    withHooks: true
+    withComponent: true
+    withHOC: false
+  src/types/generated/prismicGraphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'

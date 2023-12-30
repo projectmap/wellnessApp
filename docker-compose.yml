@@ -1,0 +1,6 @@
+version: '2'
+services:
+  web:
+    image: 241129848125.dkr.ecr.ap-south-1.amazonaws.com/ns-web:latest
+    ports:
+      - '3000:3000'

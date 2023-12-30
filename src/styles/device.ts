@@ -1,0 +1,42 @@
+const size = {
+  mobile: '320px',
+  mobileS: '375px',
+  mobileM: '576px',
+  mobileL: '767px',
+  tablet: '768px',
+  tabletL: '992px',
+  laptop: '1200px',
+  laptopS: '1280px',
+  laptopM: '1370px',
+  laptopL: '1440px',
+  laptopXL: '1920px',
+};
+
+export const device = {
+  max: {
+    mobile: `@media (max-width: ${size.mobile})`,
+    mobileS: `@media (max-width: ${size.mobileS})`,
+    mobileM: `@media (max-width: ${size.mobileM})`,
+    mobileL: `@media (max-width: ${size.mobileL})`,
+    tablet: `@media (max-width: ${size.tablet})`,
+    tabletL: `@media (max-width: ${size.tabletL})`,
+    laptop: `@media (max-width: ${size.laptop})`,
+    laptopS: `@media (max-width: ${size.laptopS})`,
+    laptopM: `@media (max-width: ${size.laptopM})`,
+    laptopL: `@media (max-width: ${size.laptopL})`,
+    laptopXL: `@media (max-width: ${size.laptopXL})`,
+  },
+  min: {
+    mobile: `@media (min-width: ${size.mobile})`,
+    mobileS: `@media (min-width: ${size.mobileS})`,
+    mobileM: `@media (min-width: ${size.mobileM})`,
+    mobileL: `@media (min-width: ${size.mobileL})`,
+    tablet: `@media (min-width: ${size.tablet})`,
+    tabletL: `@media (min-width: ${size.tabletL})`,
+    laptop: `@media (min-width: ${size.laptop})`,
+    laptopS: `@media (min-width: ${size.laptopS})`,
+    laptopM: `@media (min-width: ${size.laptopM})`,
+    laptopL: `@media (min-width: ${size.laptopL})`,
+    laptopXL: `@media (min-width: ${size.laptopXL})`,
+  },
+};
